@@ -1,0 +1,468 @@
+body {
+    background-color: #E7E7F8;
+    font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.sidenav{
+    width: 18%;
+
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.7);
+   background-color: #111111;
+   text-align: center;
+   color: #E7E7F8;
+}
+
+#slide-out > li > a {
+    background: -webkit-linear-gradient(#E2E2E2,#C9D6FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #C9D6FF;
+    font-weight: bold;
+}
+
+#slide-out > li:nth-child(1) > div > img {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.background {
+  
+    color: #EFEFEF!important;
+}
+#slide-out > li:nth-child(1) > div.user-view { 
+    color: #010103!important;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.circle {
+    background-color: #EFEFEF;
+}
+
+.name, .dev {
+    color: #EFEFEF;
+}
+.email{
+    font-size: 16px!important;
+    color:#EFEFEF;
+}
+
+.estado{
+    /* background: #3742fa;  
+    background: -webkit-linear-gradient(to left, #3742fa, #25868a);  
+    background: linear-gradient(to left, #3742fa, #25868a); */
+
+    padding: 10px;
+    line-height: normal;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#slide-out > li:nth-child(1) > div > span:nth-child(3){
+    margin-top: 0;
+    font-size: 22px!important;
+}
+
+#slide-out > li:nth-child(1) > div > span:nth-child(4){
+    font-size: 16px!important;
+    font-weight: bold!important;
+}
+
+#slide-out > li:nth-child(2) > span{
+   
+    font-size: 14px;
+}
+
+#slide-out > li:nth-child(1) > div > span.name {
+    margin-top: 10px;
+}
+
+.iconos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.iconos .ico{
+    font-size: 26px;
+    color: #EFEFEF!important;
+}
+
+
+#slide-out > li > a > i{
+    font-size: 26px;
+    background: -webkit-linear-gradient(#E2E2E2,#C9D6FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #C9D6FF;
+    width: 40px;
+    margin: 0 20px 0 0;
+    font-weight: bold!important;
+}
+
+
+
+.htitle{
+    background: -webkit-linear-gradient(#25868a,#3742fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3742fa;
+}
+
+#slide-out > li > a {
+    font-size: 18px!important;;
+}
+
+#slide-out > li > a:hover {
+    background-color: #3742fa;
+    /* color:#EFEFEF   */
+    transform:translateX(20px);
+
+}
+.lihover {
+    padding: 0 20px;
+}
+.lihover:hover{
+    font-weight: bold!important;
+    /* background-color: #020407!important; */
+    border-left: 3px solid #3742fa;
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    /* border-bottom: 1px solid rgba(0,0,0,0.14); */
+}
+
+.frase{
+    width: 60%;
+    float: right;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#home{
+    color:#fff!important;
+    text-shadow:1px 1px 5px black;
+    font-weight: 700;
+}
+
+.innerSection {
+    width: 82%; 
+    margin-left:18%;
+    padding: 2%;
+    height: 100vh;
+}
+
+#slide-out > li:nth-child(1) > div.user-view{
+    padding: 20px 0 0;
+    font-weight: 400;
+}
+
+#about, #skills, #projects {
+    width: 95%;
+    margin: auto;
+}
+
+#about{
+    /* background: */
+    /* url("../img/backab.png") bottom right no-repeat #1C1C1C; */
+
+    background-color: #1C1C1C;;
+   
+    color: #E7E7F8;
+}
+
+#about {
+    position:relative;
+}    
+#about:before {
+    content: "\25AE";  /* this is your text. You can also use UTF-8 character codes as I do here */
+    font-family: FontAwesome;
+    left:-5px;
+    position:absolute;
+    top:0;
+ }
+
+
+#about p {
+    font-size: 18px;
+}
+
+#skills{
+    height: auto;
+}
+.skills {
+    background-color: #1C1C1C;
+    color: #E7E7F8;
+    padding: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.alltec{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 10px;
+    scroll-padding-bottom: 10px;
+}
+
+.tecdiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 1em;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #555555;
+    border: 1px solid #E7E7F8;
+}
+.tecimg{
+    width: 100px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.tecimg img{
+    width: 100%;
+}
+
+.tectitle{
+    font-size: 1.5em;
+    border-bottom: 1px solid #4F4F53;
+}
+.tectitle2{
+    font-size: 1.2em;
+    border-bottom: 1px solid #4F4F53;
+}
+
+.technologies{
+    margin-bottom: 20px;
+}
+
+.tag {
+        background: #C9D6FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #E2E2E2, #C9D6FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #0E1315;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.skillsdetails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.softDiv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #1C1C1C;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.divBtn{
+    position: absolute;
+    top: 90vh;
+    width: 100%;
+}
+
+.myBtn {
+    background: #3742fa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3742fa, #25868a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3742fa, #25868a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    color: #fff;
+    padding: 2px 10px;
+    border-radius: 15px;
+    height: 30px;
+    font-weight: bold;
+    width: 150px;
+    cursor: pointer;
+}
+.myBtn:hover{ 
+    box-shadow: 3px 4px 0px rgba(0,0,0,0.7);
+  
+} 
+
+.divProjects{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hicon{
+    width: 40px;
+    transform: rotate(45deg);
+}
+
+.rowBtn{
+    text-align: center;
+}
+
+.titles{
+    margin-top: 5vh;
+}
+
+.rowBtn{
+    position: absolute;
+
+bottom: 5vh;
+
+text-align: center;
+
+width: 100%;
+}
+
+
+#projects{
+    background-color: #1C1C1C;
+}
+  
+  @media (min-width: 1025px)  {
+    
+
+        #about, #skills, #projects{
+            width: 100%;
+        }
+
+        .aboutMe{ 
+            width: 80%;
+            margin-top: 15vh;
+        }
+
+        .rowBtn{
+        
+       
+        
+        width: 82%;
+            margin-left: 18%;
+        }
+
+        .frase{
+            margin-top: 30vh;
+        }
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    
+    .frase{
+
+        color: green;
+        }
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .frase{
+
+        margin-top: 30vh;
+        width: 90%;
+        }
+    
+    .innerSection {
+        width: 100%; 
+        margin: auto;
+    }
+    .divAboutMe{
+        margin-top: 20vh;
+    }
+    .aboutMe{
+        font-size: 1.2em!important;
+        text-align: justify;
+        width: 90%;
+    }
+
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .frase{
+        width: 90%;
+        margin-top: 10vh;
+font-size: 1.2em;
+        text-align: right;
+       
+        }
+
+        .innerSection {
+            width: 100%; 
+            margin: auto;
+        }
+        .divAboutMe{
+            margin-top: 20%;
+        }
+        .aboutMe{
+            font-size: 1em!important;
+            text-align: justify;
+        }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .frase{
+        width: 90%;
+        margin-top: 10vh;
+font-size: 1.2em;
+margin-bottom: 10vh;
+        text-align: right;
+        }
+    
+    .innerSection {
+        width: 100%; 
+        margin: auto;
+    }
+    .divAboutMe{
+        margin-top: 20%;
+    }
+    .aboutMe{
+        font-size: 1em!important;
+        text-align: justify;
+    }
+
+
+  }
