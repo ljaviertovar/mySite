@@ -42,21 +42,21 @@ h2 {
 }
 
 .circle {
-    background-color: #EFEFEF;
+    background: #3742fa;  
+    background: -webkit-linear-gradient(to left, #3742fa, #25868a);  
+    background: linear-gradient(to left, #3742fa, #25868a); 
 }
 
 .name, .dev {
-    color: #EFEFEF;
+    color: #E7E7F8;
 }
 .email{
     font-size: 16px!important;
-    color:#EFEFEF;
+    color: #E7E7F8;
 }
 
 .estado{
-    /* background: #3742fa;  
-    background: -webkit-linear-gradient(to left, #3742fa, #25868a);  
-    background: linear-gradient(to left, #3742fa, #25868a); */
+    color: #E7E7F8;
 
     padding: 10px;
     line-height: normal;
@@ -91,7 +91,10 @@ h2 {
 
 .iconos .ico{
     font-size: 26px;
-    color: #EFEFEF!important;
+    background: -webkit-linear-gradient(#25868a,#3742fa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #3742fa;
 }
 
 
@@ -137,8 +140,8 @@ h2 {
 .section{
     height: 100vh;
     display: flex;
-    width: 100%;
-    /* border-bottom: 1px solid rgba(0,0,0,0.14); */
+    margin: 0!important;
+    width: 100%!important;
 }
 
 .frase{
@@ -173,10 +176,10 @@ h2 {
 }
 
 #about{
-    /* background: */
-    /* url("../img/backab.png") bottom right no-repeat #1C1C1C; */
+     background: 
+    url("../img/programmer\ \(1\).png") bottom right no-repeat #1C1C1C; 
 
-    background-color: #1C1C1C;;
+    /* background-color: #1C1C1C;; */
    
     color: #E7E7F8;
 }
@@ -313,8 +316,18 @@ h2 {
 
 .hicon{
     width: 40px;
+    animation: roll 3s infinite;
     transform: rotate(45deg);
 }
+
+@keyframes roll {
+    0% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(405deg);
+    }
+  }
 
 .rowBtn{
     text-align: center;
@@ -334,11 +347,49 @@ text-align: center;
 width: 100%;
 }
 
+#about:before{
+    content: none;
+}
 
 #projects{
     background-color: #1C1C1C;
 }
   
+.hportada{
+
+    text-align: left!important;
+}
+
+.mnu{
+    background: #3742fa;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3742fa, #25868a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3742fa, #25868a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #1C1C1C;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    /* align-content: center; */
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    z-index: 999;
+    box-shadow: 1px 2px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.mnu i{
+    margin: auto;
+}
+
+.sidenavOn{
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    transition-duration: 0.5s;
+    width: auto;
+}
+
+/* **************************** */
+
   @media (min-width: 1025px)  {
     
 
@@ -347,7 +398,7 @@ width: 100%;
         }
 
         .aboutMe{ 
-            width: 80%;
+            width: 60%;
             margin-top: 15vh;
         }
 
@@ -363,6 +414,22 @@ width: 100%;
             margin-top: 30vh;
         }
 
+        .sidenav{
+            left: 0;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        position: fixed;
+        }
+
+        .mnu{
+            display: none;
+        }
+
+        .frase{
+            margin-top: 25vh;;
+        }
+    
+
   }
   
   /* 
@@ -371,84 +438,11 @@ width: 100%;
   */
   
   @media (min-width: 768px) and (max-width: 1024px) {
-    
-    
-    .frase{
-
-        color: green;
-        }
-  }
-  
-  /* 
-    ##Device = Tablets, Ipads (landscape)
-    ##Screen = B/w 768px to 1024px
-  */
-  
-  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    
-    .frase{
-
-        margin-top: 30vh;
-        width: 90%;
-        }
-    
-    .innerSection {
-        width: 100%; 
-        margin: auto;
-    }
-    .divAboutMe{
-        margin-top: 20vh;
-    }
-    .aboutMe{
-        font-size: 1.2em!important;
-        text-align: justify;
-        width: 90%;
-    }
-
-    
-  }
-  
-  /* 
-    ##Device = Low Resolution Tablets, Mobiles (Landscape)
-    ##Screen = B/w 481px to 767px
-  */
-  
-  @media (min-width: 481px) and (max-width: 767px) {
-    
     .frase{
         width: 90%;
         margin-top: 10vh;
-font-size: 1.2em;
-        text-align: right;
-       
-        }
-
-        .innerSection {
-            width: 100%; 
-            margin: auto;
-        }
-        .divAboutMe{
-            margin-top: 20%;
-        }
-        .aboutMe{
-            font-size: 1em!important;
-            text-align: justify;
-        }
-    
-  }
-  
-  /* 
-    ##Device = Most of the Smartphones Mobiles (Portrait)
-    ##Screen = B/w 320px to 479px
-  */
-  
-  @media (min-width: 320px) and (max-width: 480px) {
-
-    .frase{
-        width: 90%;
-        margin-top: 10vh;
-font-size: 1.2em;
-margin-bottom: 10vh;
+        font-size: 1.2em;
+        margin-bottom: 10vh;
         text-align: right;
         }
     
@@ -464,5 +458,221 @@ margin-bottom: 10vh;
         text-align: justify;
     }
 
+    .tecdiv {
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center!important;
+    }
+
+    .divAboutMe{
+        padding: 0 2em;
+    }
+
+    .aboutMe{
+        width: 80%;
+        margin: auto;
+    }
+
+    .sidenav{
+        left: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    position: fixed;
+    }
+
+    
+    #about{
+        background:
+        url("../img/programmer\ \(1\).png") bottom center no-repeat #1C1C1C; 
+        background-size: 50%;
+
+    }
+    .divAboutMe{
+        margin-top: 10%;
+    }
+    
+
+
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .frase{
+        width: 90%;
+        margin-top: 10vh;
+        font-size: 1.2em;
+        margin-bottom: 10vh;
+        text-align: right;
+        }
+    
+    .innerSection {
+        width: 100%; 
+        margin: auto;
+    }
+    .divAboutMe{
+        margin-top: 20%;
+    }
+    .aboutMe{
+        font-size: 1em!important;
+        text-align: justify;
+    }
+
+    .tecdiv {
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center!important;
+    }
+
+    .divAboutMe{
+        padding: 0 2em;
+    }
+
+    .sidenav{
+        left: -100%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    position: fixed;
+    transition-duration: 1s;
+    }
+
+    .sidenavOn{
+        margin-left: 100%;
+        transition-duration: 0.5s;
+    }
+
+    .frase{
+        margin-top: 20vh;;
+    }
+
+    #about{
+        background:
+        url("../img/programmer\ \(1\).png") bottom center no-repeat #1C1C1C; 
+        background-size: 75%;
+
+    }
+
+    #about{
+        background:
+        url("../img/programmer\ \(1\).png") bottom center no-repeat #1C1C1C; 
+        background-size: 50%;
+
+    }
+    .divAboutMe{
+        margin-top: 10%;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .frase{
+        width: 90%;
+        margin-top: 10vh;
+        font-size: 1.2em;
+        text-align: right;
+       
+        }
+
+        .innerSection {
+            width: 100%; 
+            margin: auto;
+        }
+        .divAboutMe{
+            margin-top: 20%;
+        }
+        .aboutMe{
+            font-size: 1em!important;
+            text-align: justify;
+        }
+
+        .tecdiv {
+            margin-bottom: 10px;
+        }
+
+        h2{
+            text-align: center!important;
+        }
+        .divAboutMe{
+            padding: 0 2em;
+        }
+        #about{
+            background:
+            url("../img/programmer\ \(1\).png") bottom center no-repeat #1C1C1C; 
+            background-size: 75%;
+    
+        }
+        .divAboutMe{
+            margin-top: 10%;
+        }
+
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+
+    .frase{
+        width: 90%;
+        margin-top: 10vh;
+        font-size: 1.2em;
+        margin-bottom: 10vh;
+        text-align: right;
+        }
+    
+    .innerSection {
+        width: 100%; 
+        margin: auto;
+    }
+    .divAboutMe{
+        margin-top: 20%;
+    }
+    .aboutMe{
+        font-size: 1em!important;
+        text-align: justify;
+    }
+
+    .tecdiv {
+        margin-bottom: 10px;
+    }
+
+    h2{
+        text-align: center!important;
+    }
+
+    .divAboutMe{
+        padding: 0 2em;
+    }
+
+    .frase{
+        margin-top: 5vh;;
+    }
+
+    #about{
+        background:
+        url("../img/programmer\ \(1\).png") bottom center no-repeat #1C1C1C; 
+        background-size: 75%;
+
+    }
+
+    .divAboutMe{
+        margin-top: 10%;
+    }
 
   }
